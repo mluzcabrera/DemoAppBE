@@ -1,0 +1,9 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: testenvironment
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    environment: pre-prod
+    uses: mluzcabrera/changethis/env.yaml
